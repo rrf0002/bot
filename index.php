@@ -21,7 +21,7 @@ switch($message) {
                     array('text'=>'/help','callback_data'=>"4")
                 )), 'one_time_keyboard' => false, 'resize_keyboard' => true
         );
-        file_get_contents('https://api.telegram.org/bot5234948616:AAEDodKPmmzuOlShdITBu8Wb0B8W9m-dL5M/sendMessage?chat_id='.$chatId.'&parse_mode=HTML&reply_markup='.json_encode($keyboard).'&text=Elija que desea hacer');
+        file_get_contents('https://api.telegram.org/bot/sendMessage?chat_id='.$chatId.'&parse_mode=HTML&reply_markup='.json_encode($keyboard).'&text=Elija que desea hacer');
          
         break;
         case '/noticias':
